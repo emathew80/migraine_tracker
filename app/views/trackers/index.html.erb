@@ -1,6 +1,7 @@
 <div class="booyah-box col-xs-10 col-xs-offset-1">
+ <p> Hi baby girl, I'm sorry you're having a bad day! Always know I am praying for you, and I hope you feel better soon. Please don't forget to take your cambia! Call me if you need me... </p> <br/>
 <% @entry.each do |entry| %>
-  <h1><%= entry.created_at.in_time_zone('Eastern Time (US & Canada)').strftime('%B %d, %Y at %T') %></h1>
+  <h2><%= entry.created_at.in_time_zone('Eastern Time (US & Canada)').strftime('%B %d, %Y at %T') %></h2>
   <i>Pain level: <%= entry.pain_level %></i> <br/>
   <i>Description: <%= entry.description %></i>
   <% end %>
