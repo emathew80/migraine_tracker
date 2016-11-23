@@ -3,6 +3,7 @@
 <% @entry.each do |entry| %>
   <h2><%= entry.created_at.in_time_zone('Eastern Time (US & Canada)').strftime('%B %d, %Y at %T') %></h2>
   <i>Pain level: <%= entry.pain_level %></i> <br/>
+   <i>Fioricet Taken? <%= entry.fioricet_taken %></i> <br/>
   <i>Description: <%= entry.description %></i>
   <% end %>
 </div>

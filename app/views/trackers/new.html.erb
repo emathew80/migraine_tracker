@@ -3,6 +3,7 @@
   <h1>Enter Your Place Details</h1>
   <%= simple_form_for @entry do |f| %>
     <%= f.input :pain_level, as: :select, collection: Tracker::PAINSCALE%>
+    <%= f.input :fioricet_taken, as: :select, collection: Tracker::TAKEN%>
     <%= f.input :description %>
     <br />
     <%= f.submit 'Create', class: 'btn btn-primary' %>

@@ -41,10 +41,13 @@ end
       @entry = Tracker.find(params[:id])
   end
 
+
+
+
   private
 
   def entry_params
-    params.require(:tracker).permit(:pain_level, :description)
+    params.require(:tracker).permit(:pain_level, :description, :fioricet_taken)
   end
 
 end
