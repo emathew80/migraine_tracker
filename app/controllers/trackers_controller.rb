@@ -23,7 +23,7 @@ end
     if @entry.invalid?
       flash[:error] = '<strong>Could not save.</strong> The data you entered is invalid.'
     end
-    redirect_to root_path
+    redirect_to trackers_path
   end
 
 

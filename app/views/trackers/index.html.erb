@@ -1,8 +1,7 @@
 <div class="booyah-box col-xs-10 col-xs-offset-1">
-
 <% @entry.each do |entry| %>
-  <h1><%= @entry.timestamp %></h1>
-  <i><%= @entry.description %></i> 
-  <i><%= @entry.pain_level %></i>
+  <h1><%= entry.created_at.in_time_zone('Eastern Time (US & Canada)').strftime('%B %d, %Y at %T') %></h1>
+  <i><%= entry.pain_level %></i> 
+  <i><%= entry.description %></i>
+  <% end %>
 </div>
-<% end %>
